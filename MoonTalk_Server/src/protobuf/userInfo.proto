@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message UserInfo
+{
+    string UserID = 1;
+    string ImageUrl = 2;
+    string NickName = 3;
+    int32 Sex = 4;
+    string Sign = 5;
+}
+
+message UserList
+{
+    repeated UserInfo userInfo = 1;
+}
