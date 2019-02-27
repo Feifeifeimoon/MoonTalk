@@ -24,11 +24,11 @@
 
 
 # 部分截图
-![登陆界面](http://github.com/Feifeifeimoon/MoonTalk/raw/master/img/loginFrame.png)
+[登陆界面](http://github.com/Feifeifeimoon/MoonTalk/raw/master/img/loginFrame.png)
 
-![主界面](http://github.com/Feifeifeimoon/MoonTalk/raw/master/img/mainFrame.png)
+[主界面](http://github.com/Feifeifeimoon/MoonTalk/raw/master/img/mainFrame.png)
 
-![服务端](http://github.com/Feifeifeimoon/MoonTalk/raw/master/img/server.png)
+[服务端](http://github.com/Feifeifeimoon/MoonTalk/raw/master/img/server.png)
 # 任务清单
 ## 客户端
 * 好友列表的读取显示
