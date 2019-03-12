@@ -22,9 +22,7 @@ TcpServer::TcpServer(const char *ip, int port)
 void TcpServer::newConnection(int sockfd, struct sockaddr_in addr)
 {
 	struct sockaddr_in cli_addr = addr;
-	//EventLoopThread* eventLoopThread = new EventLoopThread();
 	EventLoop* loop = m_threadPool->getNextLoop();
-	//std::lock_guard <std::mutex> lck(m_mutex);
 	TcpConnectionPtr conn (new TcpConnection(loop, sockfd, addr, m_connIndex));
 	if(m_messageCallback)
 	{

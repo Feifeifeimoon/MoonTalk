@@ -17,6 +17,7 @@ public:
 private:
     void newMessage(TcpConnection& conn, char* buf);
     void _getUserInfo(TcpConnection& conn, char* userName);
+    void _getUserList(TcpConnection& conn, char* userName);
     TcpServer*         m_server;
     SqlConnectionPool* m_sqlConnPool;
 };

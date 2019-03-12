@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <vector>
 #include <map>
+#include <memory>			//std::shared_ptr
 #include <unistd.h>
 #include <sys/epoll.h>
 
@@ -15,10 +16,11 @@ class Channel;
 class EPoll
 {
 public:
+    typedef std::shared_ptr<Channel*> ChannelPtr;
     EPoll();
     ~EPoll();
     void poll();
-    void updateChannel(Channel*);
+    void updateChannel(Channel* pChannel);
 
 private:
     void update(int operation, Channel* channel);
@@ -26,7 +28,7 @@ private:
 private:
     int m_epollfd;
     std::vector<struct epoll_event> m_eventList;
-    std::map<int, Channel*>         m_channelList;
+    std::map<int, ChannelPtr>       m_channelList;
     Channel*                        m_currChannel;
 };
 

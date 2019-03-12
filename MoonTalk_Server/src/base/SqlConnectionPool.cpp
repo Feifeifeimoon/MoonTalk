@@ -21,7 +21,7 @@ void SqlConnectionPool::init(const char* host,
     {
         SqlConnection* t = new SqlConnection();
         t->connect(host, user, passwd, db, port);
-        t->state = FREE;
+        t->unlock();
         m_sqlconns.push_back(t);
     }
 }

@@ -23,8 +23,6 @@ public:
 	~TcpServer();
 	void run();
 	void setMessageCallback(const MessageCallback& cb) { m_messageCallback = cb; }
-
-
 private:
 	void newConnection(int sockfd, struct sockaddr_in addr);
 	void newMessage(TcpConnection&, char* buf);

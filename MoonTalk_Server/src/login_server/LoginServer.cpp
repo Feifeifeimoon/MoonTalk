@@ -41,6 +41,7 @@ void LoginServer::newMessage(TcpConnection& conn, char* buf)
     case MSG_TYPE_LOGIN:
     {
         LogIn login = {};
+        LogInRet ret = {};
         memcpy(&login,buf, sizeof(login));
         User user;
         user.ParseFromArray(login.buf, login.length);
@@ -48,10 +49,14 @@ void LoginServer::newMessage(TcpConnection& conn, char* buf)
         if(_confirm(user))
         {
             std::cout << "Login Successful \n";
-            LogInRet ret;
             ret.ret = 1;
-            conn.send((char*)&ret, sizeof(ret));
         }
+        else
+        {
+            std::cout << "Login Failed Wrong Accont Or PassWord \n";
+            ret.ret = 0;
+        }
+        conn.send((char*)&ret, sizeof(ret));
     }
     }
 }

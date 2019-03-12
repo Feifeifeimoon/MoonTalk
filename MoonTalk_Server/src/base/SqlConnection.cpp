@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+//DEBUG
+#include <iostream>
 SqlConnection::SqlConnection()
 {
     mysql_init(&m_mysql);
@@ -23,6 +25,7 @@ bool SqlConnection::connect(const char* host,
     {
         return false;
     }
+    mysql_query(&m_mysql, "SET NAMES UTF8");        //否则无法读取中文
     return true;
 }
 bool SqlConnection::isExist(const char* table,
@@ -105,3 +108,41 @@ void SqlConnection::getUserInfoByName(std::vector<std::string>& info,char* userN
 }
 
 
+void SqlConnection::getUserList(std::vector<std::vector<std::string> >& info ,char* userID)
+{
+    std::string cmd = "SELECT * FROM user WHERE userID in (SELECT friendID FROM relationship WHERE userID = '"; 
+    cmd += userID;
+    cmd += "')";
+   // std::cout << cmd << std::endl;
+    if(0 != mysql_query(&m_mysql, cmd.c_str()))
+    {
+        printf("mysql error\n");
+        return ;
+    }
+    MYSQL_RES* Result = NULL;
+    Result = mysql_store_result(&m_mysql);
+    int row = mysql_num_rows(Result);
+	int field = mysql_num_fields(Result);
+    MYSQL_ROW line = mysql_fetch_row(Result);
+    while(line != NULL)
+    {
+        std::vector<std::string> tmp;
+        if(line == NULL)
+            return ;
+        std::string current;
+        for(int i = 0; i < field; ++i)
+        {
+            if(line[i])
+            {
+                current = line[i];
+            }
+            else
+            {
+                current = "";
+            }
+            tmp.push_back(current);
+        }
+        info.push_back(tmp);
+        line = mysql_fetch_row(Result);
+    }
+}

@@ -23,11 +23,14 @@ public:
                  const char* value);
     bool test(const char* comm);
     void exec(const char* comm);
-    void getUserInfoByName(std::vector<std::string>& info,char* userName);
+    void getUserInfoByName(std::vector<std::string>& info, char* userName);
+    void getUserList(std::vector<std::vector<std::string> >& info ,char* userID);
     bool isFree() { return state;};
-    int  state;
+    void lock() {state = BUSY;}
+    void unlock() { state = FREE;}
 private:
     MYSQL m_mysql;
+    int  state;
 };
 
 

@@ -2,6 +2,7 @@
 #include "Channel.h"
 #include <string.h>
 #include <algorithm>
+#include <memory>
 
 EPoll::EPoll()
     : m_epollfd(::epoll_create1(EPOLL_CLOEXEC)),
@@ -39,9 +40,10 @@ void EPoll::updateChannel(Channel* channel)
     //printf("EPoll::updateChannel(Channel* channel)  index = %d  fd = %d\n", channel->index(), channel->fd());
     int index = channel->index();
     int fd = channel->fd();
+    ChannelPtr pChannel = std::make_shared<Channel*> (channel);
     if(index == -1)
     {
-        m_channelList[fd] = channel;
+        m_channelList[fd] = pChannel;
         channel->setIndex(fd);
         update(EPOLL_CTL_ADD, channel);
     }
