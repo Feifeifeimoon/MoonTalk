@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\Login">
+      <UniqueIdentifier>{c44f308a-2d5f-4bf5-8fbe-2dd9013cd49d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Login">
+      <UniqueIdentifier>{177d7ddd-c00c-4495-a52e-89efa72078d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Main">
+      <UniqueIdentifier>{80507082-1cb2-4b53-ac5d-8cbdfbd01b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Main">
+      <UniqueIdentifier>{7b002777-f45d-45c0-a5aa-6158654c2c03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\protobuf">
+      <UniqueIdentifier>{532761f1-45e9-4a8f-bcbc-14281f1826cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Client">
+      <UniqueIdentifier>{b12591f9-cee2-4377-9175-6def31a843f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Client">
+      <UniqueIdentifier>{4f7ba138-7fd6-43c7-98dd-5db87c43ff92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Login\LoginFrame.cpp">
+      <Filter>src\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainFrame\MainFrame.cpp">
+      <Filter>src\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\TcpClient.cpp">
+      <Filter>src\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client\ClientManage.cpp">
+      <Filter>src\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Login\SysFrame.cpp">
+      <Filter>src\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Protobuf\login.pb.cc">
+      <Filter>include\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\UtilCommonAPI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainFrame\CListItem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainFrame\CListView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Protobuf\userInfo.pb.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainFrame\MessageFrame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Login\LoginFrame.h">
+      <Filter>include\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MainFrame\MainFrame.h">
+      <Filter>include\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\TcpClient.h">
+      <Filter>include\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client\ClientManage.h">
+      <Filter>include\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Login\SysFrame.h">
+      <Filter>include\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Protobuf\login.pb.h">
+      <Filter>include\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Message.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\UtilCommonAPI.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MainFrame\CListItem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MainFrame\CListView.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Protobuf\userInfo.pb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MainFrame\MessageFrame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

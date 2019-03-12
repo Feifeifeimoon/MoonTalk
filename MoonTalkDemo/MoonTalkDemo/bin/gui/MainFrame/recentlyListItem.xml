@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement>
+	<Tablayout name="tab">
+		<HorizontalLayout name="normal" height="48" bkcolor="#FFF7F7F7">   
+			<Control name="face"  padding="0,4,0,0" maxwidth="40" maxheight="40"  bkimage="MainFrame/man.png" />
+			<VerticalLayout>
+				<text name="username" padding="5,2,0,0" textpadding="2,0,2,0"  align="wrap" />
+				<text name="sign" padding="5,5,0,0" textpadding="2,0,2,0"   align="wrap" />
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout name="focus" height="64" bkcolor="#FF7EC0EE">   
+			<Control name="face"  padding="0,4,0,0" maxwidth="50" maxheight="50"  bkimage="MainFrame/man.png" />
+			<VerticalLayout>
+				<text name="username" padding="5,2,0,0" textpadding="2,0,2,0"   align="wrap" />
+				<text name="sign" padding="5,5,0,0" textpadding="2,0,2,0"  align="wrap" />
+			</VerticalLayout>
+		</HorizontalLayout>
+	</Tablayout>
+  </ListContainerElement>
+</Window>

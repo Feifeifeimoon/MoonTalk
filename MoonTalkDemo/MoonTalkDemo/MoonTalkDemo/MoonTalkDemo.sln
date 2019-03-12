@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoonTalkDemo", "MoonTalkDemo\MoonTalkDemo.vcxproj", "{8063DA77-F14C-446C-AC55-AE6078C81131}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "MoonTalkDemo\DuiLib\DuiLib.vcxproj", "{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		UnicodeDebug|Win32 = UnicodeDebug|Win32
+		UnicodeDebug|x64 = UnicodeDebug|x64
+		UnicodeDebug|x86 = UnicodeDebug|x86
+		UnicodeRelease|Win32 = UnicodeRelease|Win32
+		UnicodeRelease|x64 = UnicodeRelease|x64
+		UnicodeRelease|x86 = UnicodeRelease|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Debug|Win32.Build.0 = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Debug|x64.ActiveCfg = Debug|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Debug|x64.Build.0 = Debug|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Debug|x86.ActiveCfg = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Debug|x86.Build.0 = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Release|Win32.ActiveCfg = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Release|Win32.Build.0 = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Release|x64.ActiveCfg = Release|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Release|x64.Build.0 = Release|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Release|x86.ActiveCfg = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.Release|x86.Build.0 = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeDebug|Win32.ActiveCfg = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeDebug|Win32.Build.0 = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeDebug|x64.ActiveCfg = Debug|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeDebug|x64.Build.0 = Debug|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeDebug|x86.ActiveCfg = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeDebug|x86.Build.0 = Debug|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeRelease|Win32.ActiveCfg = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeRelease|Win32.Build.0 = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeRelease|x64.ActiveCfg = Release|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeRelease|x64.Build.0 = Release|x64
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeRelease|x86.ActiveCfg = Release|Win32
+		{8063DA77-F14C-446C-AC55-AE6078C81131}.UnicodeRelease|x86.Build.0 = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|Win32.Build.0 = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|x64.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|x86.ActiveCfg = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Debug|x86.Build.0 = Debug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|Win32.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|Win32.Build.0 = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x64.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x86.ActiveCfg = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.Release|x86.Build.0 = Release|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|Win32.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|Win32.Build.0 = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x64.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x86.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x86.Build.0 = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|Win32.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x64.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x86.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x86.Build.0 = UnicodeRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAF01E8C-DB31-4D2F-8CD3-8D8AE5D866FE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="350, 350" caption="0, 0, 0, 32" sizebox="0,4,0,4"><!-- 窗口的初始尺寸(520, 320)标题栏拖拽区域(高32) -->
+	<Font shared="ture" id="0" name="微软雅黑" size="12" bold="false" default="true" />
+	<Font shared="ture" id="1" name="微软雅黑" size="16" bold="true" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,0,8,7&apos;&quot; button1hotimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,0,8,7&apos;&quot; button1pushedimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,0,8,7&apos;&quot; button2normalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,17,8,24&apos;&quot; button2hotimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,17,8,24&apos;&quot; button2pushedimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,17,8,24&apos;&quot; thumbnormalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,24,8,72&apos; corner=&apos;2,2,2,2&apos;&quot; thumbhotimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,24,8,72&apos; corner=&apos;2,2,2,2&apos;&quot; thumbpushedimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,24,8,72&apos; corner=&apos;2,2,2,2&apos;&quot; bknormalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,6,8,17&apos;&quot;" />
+	<VerticalLayout bkcolor="#FFF7F7F7" bordersize="3">
+		<!-- 标题栏区 -->
+		<HorizontalLayout height="32" bkcolor="#FFF7F7F7"> <!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个值-->    
+			<text name="name" height="32" padding="5,0,0,0" textpadding="2,0,2,0" text="对方名称"  />
+			<HorizontalLayout /> <!-- 占空位，占据左边所有的空位-->
+			<HorizontalLayout width="111"> <!-- 右边三个控件所占的宽度-->
+				<Button name="settingbtn"   tooltip="设置" padding="5,0,0,0" height="32" width="32" normalimage=" file='SysIcon/setting.png' " hotimage=" file='SysIcon/setting_h.png' "/>
+				<Button name="minbtn"   tooltip="最小化" padding="5,0,0,0" height="32" width="32" normalimage=" file='SysIcon/minus.png' " hotimage=" file='SysIcon/minus_b.png' "/>
+			<Button name="closebtn" tooltip="关闭"   padding="5,0,0,0" height="32" width="32"  normalimage=" file='SysIcon/close.png' " hotimage=" file='SysIcon/close_h.png' "/>
+			</HorizontalLayout> 
+		</HorizontalLayout>
+		<VerticalLayout bkcolor="FF00FF00" height="200">
+		
+		
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

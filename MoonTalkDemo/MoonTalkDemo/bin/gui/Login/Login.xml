@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="500, 320" caption="0, 0, 0, 32"><!-- 窗口的初始尺寸(520, 320)标题栏拖拽区域(高32) -->
+	<Font shared="ture" id="0" name="微软雅黑" size="12" bold="false" default="true" />
+
+	<VerticalLayout  bkcolor="#FFF7F7F7" bordersize="3">
+		<!-- 标题栏区 -->
+		<HorizontalLayout height="32"> <!-- 标题栏背景色  白色FFF7F7F7-->         
+			<HorizontalLayout /> <!-- 占空位，占据左边所有的空位-->
+			<HorizontalLayout width="111"> <!-- 右边三个控件所占的宽度-->
+			<Button name="settingbtn"   tooltip="设置" padding="5,0,0,0" height="32" width="32" normalimage=" file='SysIcon/setting.png' " hotimage=" file='SysIcon/setting_h.png' "/>
+			<Button name="minbtn"   tooltip="最小化" padding="5,0,0,0" height="32" width="32" normalimage=" file='SysIcon/minus.png' " hotimage=" file='SysIcon/minus_b.png' "/>
+			<Button name="closebtn" tooltip="关闭"   padding="5,0,0,0" height="32" width="32"  normalimage=" file='SysIcon/close.png' " hotimage=" file='SysIcon/close_h.png' "/>
+			</HorizontalLayout>      
+		</HorizontalLayout>
+        <VerticalLayout >
+			<Control  padding="150,10,0,0" bkimage="SysIcon/label.png" maxwidth="200" height="50" />			
+			<HorizontalLayout height="30"/>
+			<HorizontalLayout height="32">
+				<Control  padding="128,0,0,0" bkimage="Login/acc.png" maxwidth="32" maxheight="32" />
+				<Edit name="name_edit" padding="0,0,160,0"  height="32"  textpadding="10,0,10,0"  tooltip="请输入用户名" multiline="false" />
+			</HorizontalLayout>
+			<HorizontalLayout height="25"/>
+			<HorizontalLayout height="32">
+				<Control  padding="128,0,0,0" bkimage="Login/pwd.png" maxwidth="32" maxheight="32" />
+				<Edit name="pwd_edit" padding="0,0,160,0"  height="32"  textpadding="10,0,10,0"  tooltip="请输入密码" multiline="false" password="true"/>
+			</HorizontalLayout>
+			<text name="tips" height="12" padding="180,5,150,0" textpadding="2,0,2,0"  textcolor="#FFFF0000" align="center" />
+			<Button name="loginbtn" padding="150,10,150,30" normalimage=" file='Login/login.png' " hotimage=" file='Login/login_h.png' " height="36" shortcut="Enter" text="登   录"  bold="true" font="1"/>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

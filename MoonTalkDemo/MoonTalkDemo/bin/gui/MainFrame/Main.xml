@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="280, 550" caption="0, 0, 0, 32" sizebox="0,4,0,4"><!-- 窗口的初始尺寸(520, 320)标题栏拖拽区域(高32) -->
+	<Font shared="ture" id="0" name="微软雅黑" size="12" bold="false" default="true" />
+	<Font shared="ture" id="1" name="微软雅黑" size="16" bold="true" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,0,8,7&apos;&quot; button1hotimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,0,8,7&apos;&quot; button1pushedimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,0,8,7&apos;&quot; button2normalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,17,8,24&apos;&quot; button2hotimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,17,8,24&apos;&quot; button2pushedimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,17,8,24&apos;&quot; thumbnormalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,24,8,72&apos; corner=&apos;2,2,2,2&apos;&quot; thumbhotimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,24,8,72&apos; corner=&apos;2,2,2,2&apos;&quot; thumbpushedimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,24,8,72&apos; corner=&apos;2,2,2,2&apos;&quot; bknormalimage=&quot;file=&apos;MainFrame/scrollbar.png&apos; source=&apos;0,6,8,17&apos;&quot;" />
+	<VerticalLayout bkcolor="#FFF7F7F7" bordersize="3">
+		<!-- 标题栏区 -->
+		<HorizontalLayout height="32" bkcolor="#FFF7F7F7"> <!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个值-->    
+			<!--Control  padding="0,0,0,0" bkimage="SysIcon/label.png" height="32" width="170" /-->
+			<HorizontalLayout /> <!-- 占空位，占据左边所有的空位-->
+			<HorizontalLayout width="111"> <!-- 右边三个控件所占的宽度-->
+				<Button name="settingbtn"   tooltip="设置" padding="5,0,0,0" height="32" width="32" normalimage=" file='SysIcon/setting.png' " hotimage=" file='SysIcon/setting_h.png' "/>
+				<Button name="minbtn"   tooltip="最小化" padding="5,0,0,0" height="32" width="32" normalimage=" file='SysIcon/minus.png' " hotimage=" file='SysIcon/minus_b.png' "/>
+			<Button name="closebtn" tooltip="关闭"   padding="5,0,0,0" height="32" width="32"  normalimage=" file='SysIcon/close.png' " hotimage=" file='SysIcon/close_h.png' "/>
+			</HorizontalLayout> 
+		</HorizontalLayout>
+		<!-- 用户信息 -->
+		<HorizontalLayout height="75" bkcolor="#FFF7F7F7">   
+			<Button name="facebtn" tooltip="头像"   padding="5,5,0,0" height="64" width="64"  normalimage=" file='MainFrame/man_m.png' " hotimage=" file='MainFrame/man_m.png' "/>
+			<VerticalLayout>
+				<text name="username" height="40" padding="5,10,0,0" textpadding="2,0,2,0" text="登陆者名称" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+				<Edit name="sign_edit" padding="0,10,75,0" height="24" textpadding="2,3,3,0" bkcolor="FFF7F7F7" nativebkcolor="FFF7F7F7" tooltip="个性签名" multiline="false"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<!-- 搜索栏 -->
+		<HorizontalLayout height="27" bkcolor="#FFF7F7F7"> 
+			<Edit name="editSearch"  height="27" textpadding="10,3,3,3" bordersize="0" borderround="2,2" bordercolor="FFDADADA" inset="4,4,4,3"  text="搜索：员工、讨论组、群" multiline="false" />
+			<Button name="searchbtn" height="27" width="24" normalimage="file = 'MainFrame/search.png'" />
+		</HorizontalLayout>
+		
+		<VerticalLayout name="MainListLayout" padding="0,2,0,0">
+			<Control height="1" bkcolor="#FFD1DCE1"/>		
+            <HorizontalLayout name="tabbtns" height="32"  inset="0,0,0,0" bkcolor="#FFF7F7F7">
+				<Option name="RecentlyListbtn" tooltip="最近联系人" width="92" height="32"  selected="true" group="true" normalimage="file='MainFrame/time.png' source='0,0,32,32' dest='30,0,62,32'" selectedimage="file='MainFrame/time_h.png' source='0,0,32,32' dest='30,0,62,32'"/>
+                <Option name="friendbtn" tooltip="好友" width="93" height="32"  group="true"  normalimage="file='MainFrame/people.png' source='0,0,32,32' dest='30,0,62,32'" selectedimage="file='MainFrame/people_h.png' source='0,0,32,32' dest='30,0,62,32'" />
+                <Option name="groupbtn" tooltip="群/讨论组" width="92" height="32" group="true"  normalimage="file='MainFrame/group.png' source='0,0,32,32' dest='30,0,62,32'" selectedimage="file='MainFrame/group_h.png' source='0,0,32,32' dest='30,0,62,32'" />
+            </HorizontalLayout>
+			<List name="ListLayout" padding="0,0,0,0" height="450"  vscrollbar="true" hscrollbar="true" itemselectedbkcolor="#FF7EC0EE">			
+       
+
+			</List>					
+		</VerticalLayout> 
+	</VerticalLayout>
+</Window>
